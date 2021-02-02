@@ -21,7 +21,7 @@
  Instalando Versão 2 do app e utilizando os handlers
 
 
-# Dependencia
+# Dependencias
 Instalar aws cli
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -30,10 +30,13 @@ sudo ./aws/install
 
 aws --version
 ````
-# Configurar Credencial
+## Configurar Credencial
 ````
 aws --profile giropops configure  
 (adicionar Access key ID e Senha)
 us-east-1
 ````
 
+## Configurar chave pem
+
+Adicionar a chave keypair no ~./chave.pem

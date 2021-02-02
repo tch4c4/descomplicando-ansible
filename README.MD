@@ -19,3 +19,21 @@
  Instalando Helm Prometheus + App
  ### Day 5 
  Instalando Versão 2 do app e utilizando os handlers
+
+
+# Dependencia
+Instalar aws cli
+````
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+aws --version
+````
+# Configurar Credencial
+````
+aws --profile giropops configure  
+(adicionar Access key ID e Senha)
+us-east-1
+````
+

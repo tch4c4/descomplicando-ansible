@@ -27,9 +27,9 @@
   shell: kubeadm token list | cut -d ' ' -f1 | sed -n '2p' # vai pegar apenas o token
   register: k8s_token
 
+  #gerar chave CA
 - name: CA Hash
   shell: openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //' 
-  #gerar chave CA
   register: k8s_master_ca_hash
 
 - name: Adicionando o token e o hash em um dummy host

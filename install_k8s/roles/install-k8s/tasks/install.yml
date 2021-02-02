@@ -22,6 +22,11 @@
     - kubectl
   notify: Restart Kubelet
 
+- name: Reforçando estado de serviços necessários
+  service:
+    name: docker
+    state: started  
+
 - name: Pausa por 2 min.
   pause: 
     minutes: 2

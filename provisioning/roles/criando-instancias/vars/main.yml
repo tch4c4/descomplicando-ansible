@@ -1,0 +1,11 @@
+---
+# vars file for criando-instancias
+instance_type: t3.medium
+sec_group_name: giropops
+image: ami-00ddb0e5626798373
+keypair: ansible-class
+region: us-east-1
+count_master: 1
+count_worker: 3
+profile: giropops
+
